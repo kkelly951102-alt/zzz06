@@ -1,0 +1,212 @@
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="走進台中公園，認識百年歷史、湖心亭與日月湖，透過景點清單、有框表格、照片、影片與 Google 地圖閱讀城市故事。">
+<meta name="author" content="HTML 課程示範作者">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="台中公園報導｜城市裡的百年風景">
+<meta property="og:description" content="認識台中公園的百年歷史、湖心亭與日月湖，搭配景點表格、照片、影片及位置地圖。">
+<meta property="og:image" content="https://www\.taiwan.net.tw/att/1/big_scenic_spots/pic_A12-00079_10.jpg">
+<meta property="og:image:alt" content="台中公園日月湖上的湖心亭">
+<meta property="article:published_time" content="2026-10-07">
+<meta property="article:modified_time" content="2026-10-14">
+<title>台中公園報導｜城市裡的百年風景</title>
+
+<style>
+:root{--forest:#244c3b;--green:#3d7258;--sage:#e4eee5;--cream:#f7f5ef;--ink:#26332d;--muted:#68766d;--line:#dce5dc;--white:#fff;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",Arial,sans-serif;font-size:16px;line-height:1.9;}
+header#top{position:relative;overflow:hidden;text-align:center;padding:78px 22px 68px;color:#fff;background:linear-gradient(135deg,rgba(24,65,47,.96),rgba(66,117,83,.88)),url('https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_A12-00079_10.jpg') center/cover;}
+header#top:after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.28);pointer-events:none;}
+header h1{position:relative;margin:0 auto 8px;max-width:900px;font-size:clamp(2rem,5vw,3.3rem);line-height:1.35;letter-spacing:.04em;}
+header p{position:relative;margin:8px auto;max-width:800px;}header small{letter-spacing:.12em;color:#e1eee3;}header strong{font-size:1.08rem;}
+mark{padding:2px 8px;border-radius:4px;background:#e6d6a8;color:#273b2e;}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:0 3px 14px #1d38240d;padding:10px max(16px,calc((100% - 1100px)/2));}
+nav h2{display:none;}nav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 10px;list-style:none;padding:0;margin:0;}nav a{display:block;text-decoration:none;color:var(--forest);font-size:.92rem;font-weight:700;padding:6px 12px;border-radius:999px;transition:background .2s,color .2s;}nav a:hover,nav a:focus{background:var(--forest);color:#fff;}
+main{width:min(100% - 32px,1000px);margin:34px auto 60px;}article{display:grid;gap:24px;}
+section,aside#tips{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:clamp(22px,4vw,42px);box-shadow:0 8px 24px rgba(36,76,59,.055);}
+section h2,aside h2{color:var(--forest);font-size:clamp(1.35rem,3vw,1.8rem);margin:0 0 22px;padding-bottom:12px;border-bottom:2px solid var(--sage);}
+h3{color:var(--green);margin-top:24px;}p{margin:12px 0;}strong{color:#315b43;}a{color:#2c7651;text-underline-offset:3px;}a:hover{color:#173c2b;}
+ul,ol{padding-left:1.5em;}li{padding-left:4px;margin:8px 0;}#highlights li::marker{color:var(--green);font-weight:bold;}
+#table{overflow:hidden;}table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:16px;}caption{caption-side:top;text-align:left;font-weight:700;color:var(--muted);padding:0 0 12px;}th,td{padding:14px 16px;text-align:left;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}th{background:var(--forest);color:#fff;}tbody tr:nth-child(even){background:#f4f8f3;}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0;}tr th:last-child,tr td:last-child{border-right:0;}
+figure{margin:20px 0 0;text-align:center;}figure img{display:block;width:min(100%,760px);height:auto;max-height:520px;object-fit:cover;margin:0 auto;border-radius:14px;box-shadow:0 10px 26px #1b39241a;}figcaption{margin-top:12px;color:var(--muted);font-size:.92rem;}iframe{display:block;width:100%;max-width:760px;border:0;border-radius:14px;margin:20px auto;box-shadow:0 10px 26px #1b39241a;}#map iframe{max-width:100%;height:420px;}
+#video a,#map a{display:inline-block;background:var(--sage);color:var(--forest);font-weight:700;padding:8px 15px;border-radius:8px;text-decoration:none;}#video a:hover,#map a:hover{background:var(--forest);color:#fff;}
+aside#tips{background:#edf4ec;border-left:5px solid var(--green);}details{background:#fff;border-radius:10px;padding:14px 18px;}summary{cursor:pointer;font-weight:700;color:var(--forest);}footer{text-align:center;background:var(--forest);color:#e9f0e9;padding:34px 20px;}footer p{margin:5px;}footer strong{color:#fff;}footer a{color:#d4e8d8;}
+hr{display:none;}section,aside{scroll-margin-top:90px;}code{background:#edf1eb;padding:2px 5px;border-radius:4px;}
+@media(max-width:650px){body{font-size:15px;}header#top{padding:58px 20px;}nav{position:relative;padding:10px;}nav ul{gap:4px;}nav a{font-size:.85rem;padding:5px 9px;}main{width:min(100% - 20px,1000px);margin:18px auto 36px;}article{gap:16px;}section,aside#tips{padding:22px 18px;border-radius:14px;}table{font-size:.88rem;}th,td{padding:10px 8px;}#map iframe{height:320px;}}
+</style>
+
+</head>
+<body>
+<header id="top">
+<h1>台中公園：城市裡的百年風景</h1>
+<p><small>城市走讀 · 歷史地標 · 公園漫遊</small></p>
+<p><strong>從湖心亭到林蔭步道，一起閱讀台中的城市記憶。</strong></p>
+<p>本期焦點：<mark>百年歷史與湖畔風景</mark>，從景點報導延伸到位置地圖。</p>
+<p>作者：林靄均｜報導整理日期：<time datetime="2026-10-14">2026 年 10 月 15 日</time></p>
+<p><small>本文為資料整理型教學報導，非現場採訪紀錄。</small></p>
+</header>
+<nav aria-label="報導目錄">
+<h2>報導目錄</h2>
+<ul>
+<li><a href="#intro">公園簡介</a></li>
+<li><a href="#highlights">景點特色與散步順序</a></li>
+<li><a href="#table">景點比較表</a></li>
+<li><a href="#photo">湖心亭照片</a></li>
+<li><a href="#video">影音報導</a></li>
+<li><a href="#map">位置地圖</a></li>
+<li><a href="#tips">走讀小提醒</a></li>
+<li><a href="#sources">資料來源</a></li>
+</ul>
+</nav>
+<hr>
+<main id="main-content">
+<article aria-label="台中公園專題報導">
+<section id="intro">
+<h2>一、公園簡介</h2>
+<p>台中公園位於台中市中心，自 <strong>1903 年 10 月 28 日</strong>開園以來，
+成為市民認識城市歷史的重要地點。園內結合湖泊、歷史建築與綠地，
+讓人能在城市生活中找到散步與休息的空間。</p>
+<p>
+在觀念保守的二十世紀中葉，情侶們會划著小船圍繞湖心亭談情說愛，也有許多攝影師以此招攬遊客作背景。<strong>吳伯雄</strong>就投稿1964年12月1日他與妻子蜜月來此旅行的回憶。因休假時數過短而無法趕回家中的成功嶺大專兵，也會選擇湖心亭作為休假場所。
+</p>
+<p>
+戰後時期，湖心亭被改名<strong>「中正亭」</strong>，直到1999年9月8日由時任台中市長張溫鷹正名
+</p>
+<p>公園地址：台中市北區雙十路一段 65 號。<br>閱讀重點：歷史地標、湖畔景觀與城市綠地。</p>
+</section>
+<hr>
+<section id="highlights">
+<h2>二、景點特色與散步順序</h2>
+<h3>值得留意的三個特色</h3>
+<ul>
+<li><strong>歷史建築：</strong>湖心亭連結了公園與縱貫鐵路通車的歷史。</li>
+<li><strong>湖畔風景：</strong>日月湖與湖心亭形成公園具有辨識度的景觀。</li>
+<li><strong>城市綠地：</strong>園內的草地與樹木提供接近自然的空間。</li>
+</ul>
+<h3>建議散步順序</h3>
+<p>以下是本報導規劃的散步建議，並非官方指定路線。</p>
+<ol>
+<li>進入公園後，先閱讀現場導覽資訊，確認各景點位置。</li>
+<li>走到日月湖畔，觀察湖心亭的外觀與水面倒影。</li>
+<li>前往望月亭一帶，閱讀解說牌並認識公園的歷史。</li>
+<li>沿園內步道散步，最後在休憩空間整理今日的觀察。</li>
+</ol>
+</section>
+<hr>
+<section id="table">
+<h2>三、景點比較表</h2>
+<table border="1">
+<caption>台中公園三處景點的特色與觀察重點</caption>
+<thead>
+<tr>
+<th scope="col">景點名稱</th>
+<th scope="col">主要特色</th>
+<th scope="col">建議觀察重點</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">湖心亭</th>
+<td>建於 1908 年的市定古蹟</td>
+<td>亭體外觀及與鐵路通車的歷史關係</td>
+</tr>
+<tr>
+<th scope="row">日月湖</th>
+<td>湖心亭所在的湖泊</td>
+<td>湖面倒影及湖畔景觀</td>
+</tr>
+<tr>
+<th scope="row">望月亭</th>
+<td>與清代臺灣府城相關的歷史遺跡</td>
+<td>建築外觀及現場歷史解說</td>
+</tr>
+</tbody>
+</table>
+</section>
+<hr>
+<section id="photo">
+<h2>四、湖心亭照片</h2>
+<figure>
+<img
+src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/2024%E5%B9%B4%E5%8F%B0%E4%B8%AD%E5%85%AC%E5%9C%92%E6%B9%96%E5%BF%83%E4%BA%AD%E8%88%87%E5%88%92%E8%88%B9%E9%81%8A%E5%AE%A2.jpg/250px-2024%E5%B9%B4%E5%8F%B0%E4%B8%AD%E5%85%AC%E5%9C%92%E6%B9%96%E5%BF%83%E4%BA%AD%E8%88%87%E5%88%92%E8%88%B9%E9%81%8A%E5%AE%A2.jpg?utm_source=zh.wikipedia.org&utm_campaign=parser&utm_content=thumbnail"
+alt="台中公園日月湖上的湖心亭"
+width="480">
+<figcaption>
+湖心亭是台中公園的重要地標。
+圖片來源：<a href="https://zh.wikipedia.org/zh-tw/%E6%B9%96%E5%BF%83%E4%BA%AD_%28%E8%87%BA%E4%B8%AD%E5%B8%82%29">維基百科「臺中公園」景點頁</a>。
+</figcaption>
+</figure>
+</section>
+<hr>
+<section id="video">
+<h2>五、影音報導</h2>
+<p>透過下方影片認識台中公園與湖心亭，再比較影片畫面與本文介紹的景點。</p>
+<figure>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/zywCUOaybyc?si=odiwaqCfiULSNwIy"
+title="YouTube video player"
+
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen></iframe>
+<figcaption>影片：台中公園湖心亭，台中必訪知名地標｜發布者：KKday Taiwan。</figcaption>
+</figure>
+<p><a href="https://www.youtube.com/watch?v=zywCUOaybyc" target="_blank" rel="noopener noreferrer">在 YouTube 觀看 KKday 的台中公園湖心亭介紹（另開分頁）</a></p>
+<p><small>影片為外部作者發布的景點介紹，現場狀況請以最新官方資訊為準。</small></p>
+<p><small>本機預覽請使用同資料夾的 <code>HW05_開啟預覽.command</code> 或 Live Server；若直接開啟 HTML 出現錯誤 153，請改用 HTTP 預覽或上方 YouTube 連結。</small></p>
+</section>
+<section id="map">
+<h2>六、位置地圖：找到台中公園</h2>
+<p>台中公園位於台中市北區，地址為<strong>雙十路一段 65 號</strong>。
+下方地圖標示本文介紹的公園位置，方便讀者對照景點與周邊街道。</p>
+<iframe
+src="https://maps.google.com/maps?q=24.144818,120.68447&z=16&output=embed"
+width="480"
+height="360"
+title="台中公園位置 Google 地圖"
+loading="lazy"
+referrerpolicy="strict-origin-when-cross-origin"
+allowfullscreen>
+</iframe>
+<p><a href="https://www.google.com/maps/search/?api=1&query=%E5%8F%B0%E4%B8%AD%E5%85%AC%E5%9C%92%2C%E5%8F%B0%E4%B8%AD%E5%B8%82" target="_blank" rel="noopener noreferrer">在 Google 地圖開啟台中公園（另開分頁）</a></p>
+<p><small>位置查詢由 Google 地圖提供；抵達後請依現場導覽牌確認入口與步道。</small></p>
+</section>
+<hr>
+<aside id="tips" aria-labelledby="tips-title">
+<h2 id="tips-title">走讀小提醒</h2>
+<details open>
+<summary>出發前與走讀時，記得這三件事</summary>
+<ul>
+<li>攜帶飲用水，依天氣準備防曬或雨具。</li>
+<li>在湖畔留意安全，尊重古蹟並保持環境整潔。</li>
+<li>以文字或照片記錄觀察；若寫入報導，區分現場觀察與引用資料。</li>
+</ul>
+</details>
+</aside>
+<hr>
+<section id="sources">
+<h2>七、資料來源</h2>
+<p>本報導依下列資料整理，散步順序與觀察建議由示範作者規劃。</p>
+<ul>
+<li><a href="https://zh.wikipedia.org/zh-tw/%E6%B9%96%E5%BF%83%E4%BA%AD_%28%E8%87%BA%E4%B8%AD%E5%B8%82%29">維基百科：臺中公園（含圖片來源）</a></li>
+<li><a href="https://www.tchac.taichung.gov.tw/building?pid=15&uid=33" target="_blank" rel="noopener noreferrer">臺中市文化資產處：中山公園湖心亭</a></li>
+<li><a href="https://www.youtube.com/watch?v=zywCUOaybyc" target="_blank" rel="noopener noreferrer">YouTube：KKday Taiwan 台中公園湖心亭介紹影片</a></li>
+</ul>
+<p><small>資料整理日期：2026 年 10 月 14 日。</small></p>
+</section>
+</article>
+</main>
+<hr>
+<footer>
+<p><strong>行銷設計作業｜台中公園報導</strong></p>
+<p><small>作者：林靄均· 更新日期：2026 年 10 月 15 日</small></p>
+<p><small>文字依來源整理；照片與影片權利屬原作者。</small></p>
+<p><a href="#top">回到頁首</a></p>
+</footer>
+</body>
+</html>
